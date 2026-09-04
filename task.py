@@ -31,7 +31,6 @@ class Task(object):
     def part5(self):
         with open('hours.csv', 'r') as csvfile:
             r = csv.reader(csvfile)
-            next(r) # skip header
             with open('part5.txt', 'w') as x:
                 for row in r:
                     x.write(','.join(row) + '\n')
@@ -51,7 +50,6 @@ class Task(object):
     def part6(self):
         with open('hours.csv', 'r') as csvfile:
             r = csv.reader(csvfile)
-            next(r) # skip header
             #write output to 'part6.txt'
             with open('part6.txt', 'w') as f:
                 for row in r:
@@ -65,7 +63,6 @@ class Task(object):
     def part7(self):
         with open('hours.csv', 'r') as csvfile:
             r = csv.reader(csvfile)
-            next(r) # skip header
             #write output to 'part7.txt'
             with open('part7.txt', 'w') as f:
                 for row in r:
