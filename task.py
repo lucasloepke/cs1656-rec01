@@ -53,7 +53,8 @@ class Task(object):
             #write output to 'part6.txt'
             with open('part6.txt', 'w') as f:
                 for row in r:
-                    f.write(str(row) + '\n')
+                    f.write('\\' + str(row))
+                    
         
     # For this part, you must open the CSV file again, parse it 
     # using `csv.reader()`, iterate through the rows, and write 
